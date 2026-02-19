@@ -1,0 +1,15 @@
+# Binaries
+/github-actions-exporter
+*.exe
+*.out
+*.test
+
+# Vendor
+/vendor/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
