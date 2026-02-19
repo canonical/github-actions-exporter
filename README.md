@@ -23,7 +23,8 @@ Set the following environment variables:
     ```
 - `GITHUB_TOKEN`: (Optional) GitHub personal access token for private repos or higher rate limits.
 - `EXPORTER_PORT`: (Optional) Port to serve metrics (default: 8080).
-- `SCRAPE_INTERVAL`: (Optional) Scrape interval, e.g. `60s` (default: 60s).
+- `SCRAPE_INTERVAL`: (Optional) How often to fetch fresh data from the GitHub API, e.g. `60s` (default: 60s). This is independent of how often Prometheus scrapes the `/metrics` endpoint. The exporter continuously fetches workflow data from GitHub at this interval and caches the results.
+
 ## Proxy Support
 
 To use a network proxy for GitHub API requests, set the standard `HTTP_PROXY`, `HTTPS_PROXY`, or `NO_PROXY` environment variables:
