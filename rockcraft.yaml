@@ -13,7 +13,7 @@ platforms:
 services:
   exporter:
     override: replace
-    command: /bin/github-actions-exporter
+    command: /usr/bin/github-actions-exporter
     startup: enabled
 
 parts:
