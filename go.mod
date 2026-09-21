@@ -1,4 +1,4 @@
-module github.com/example/github-actions-exporter
+module github.com/canonical/github-actions-exporter
 
 go 1.25.7
 

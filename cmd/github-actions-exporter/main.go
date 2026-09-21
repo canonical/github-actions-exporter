@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/example/github-actions-exporter/internal/githubapi"
-	"github.com/example/github-actions-exporter/internal/metrics"
+	"github.com/canonical/github-actions-exporter/internal/githubapi"
+	"github.com/canonical/github-actions-exporter/internal/metrics"
 )
 type WorkflowConfig struct {
 	Repo      string   `json:"repo"`

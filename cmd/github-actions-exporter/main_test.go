@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/example/github-actions-exporter/internal/githubapi"
+	"github.com/canonical/github-actions-exporter/internal/githubapi"
 )
 
 func TestStatusToValue(t *testing.T) {
