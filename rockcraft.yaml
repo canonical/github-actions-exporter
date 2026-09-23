@@ -22,3 +22,10 @@ parts:
     source: .
     build-snaps:
       - go/1.25/stable
+  # Without a trust store the exporter cannot complete the TLS handshake with
+  # https://api.github.com, and every scrape fails with
+  # "x509: certificate signed by unknown authority".
+  ca-certificates:
+    plugin: nil
+    stage-packages:
+      - ca-certificates
